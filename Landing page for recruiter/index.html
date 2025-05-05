@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Робота в Європі</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="hero">
+        <div class="lang-switcher">
+            <button data-lang="ua">UA</button>
+            <button data-lang="pl">PL</button>
+            <button data-lang="cz">CZ</button>
+            <button data-lang="de">DE</button>
+        </div>
+        <div class="container">
+            <h1 data-i18n="hero_title">Робота в Європі</h1>
+            <p data-i18n="hero_text">Найкращі вакансії в Польщі, Чехії та Німеччині</p>
+            <a href="#vacancies" class="btn" data-i18n="view_jobs">Переглянути вакансії</a>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="container">
+            <h2 data-i18n="about_title">Чому обирають нас?</h2>
+            <p data-i18n="about_text">Ми допомагаємо знайти роботу швидко та безпечно.</p>
+        </div>
+    </section>
+
+    <section class="process">
+        <div class="container">
+            <h2 data-i18n="process_title">Як це працює?</h2>
+            <ul>
+                <li data-i18n="process_step1">1. Залишаєш заявку або пишеш у Viber</li>
+                <li data-i18n="process_step2">2. Обираєш вакансію за своїм профілем</li>
+                <li data-i18n="process_step3">3. Ми допомагаємо з документами</li>
+                <li data-i18n="process_step4">4. Виїжджаєш на роботу</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="countries" id="vacancies">
+        <div class="container flex">
+            <div class="flex-col">
+                <h3 data-i18n="country_pl">Польща</h3>
+                <p data-i18n="country_pl_text">Фабрики, склади, будівництво</p>
+            </div>
+            <div class="flex-col">
+                <h3 data-i18n="country_cz">Чехія</h3>
+                <p data-i18n="country_cz_text">Заводи, логістика, виробництво</p>
+            </div>
+            <div class="flex-col">
+                <h3 data-i18n="country_de">Німеччина</h3>
+                <p data-i18n="country_de_text">Догляд, обслуговування, будівництво</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="vacancies" id="vacancies">
+        <h2 class="section-title" data-i18n="vacancies_title">Зараз відкриті вакансії</h2>
+        <div class="vacancy-list">
+            <div class="vacancy-card">
+                <h3 data-i18n="vacancy_country_pl">Польща</h3>
+                <p><strong data-i18n="vacancy_position">Посада:</strong> Працівник складу</p>
+                <p><strong data-i18n="vacancy_salary">Зарплата:</strong> 1200–1500€</p>
+                <p data-i18n="vacancy_description">Робота зі сканером, пакування товарів. Без досвіду.</p>
+            </div>
+            <div class="vacancy-card">
+                <h3 data-i18n="vacancy_country_cz">Чехія</h3>
+                <p><strong data-i18n="vacancy_position">Посада:</strong> Оператор на виробництві</p>
+                <p><strong data-i18n="vacancy_salary">Зарплата:</strong> 1300–1600€</p>
+                <p data-i18n="vacancy_description">Зміни, офіційне працевлаштування, безкоштовне житло.</p>
+            </div>
+            <div class="vacancy-card">
+                <h3 data-i18n="vacancy_country_de">Німеччина</h3>
+                <p><strong data-i18n="vacancy_position">Посада:</strong> Помічник на будівництві</p>
+                <p><strong data-i18n="vacancy_salary">Зарплата:</strong> 1500–1800€</p>
+                <p data-i18n="vacancy_description">Фізична робота, досвід вітається, оформлення документів.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2 data-i18n="testimonials_title">Відгуки наших клієнтів</h2>
+            <blockquote data-i18n="testimonial_1">“Дякую за допомогу! Виїхала до Польщі без проблем.” — Олена
+            </blockquote>
+            <blockquote data-i18n="testimonial_2">“Надійна агенція. Все прозоро та чесно.” — Андрій</blockquote>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h2 data-i18n="faq_title">Поширені запитання</h2>
+            <p><strong data-i18n="faq_q1">Скільки коштує працевлаштування?</strong><br><span data-i18n="faq_a1">У
+                    більшості випадків – безкоштовно.</span></p>
+            <p><strong data-i18n="faq_q2">Чи потрібна віза?</strong><br><span data-i18n="faq_a2">Залежить від країни та
+                    вакансії. Ми проконсультуємо.</span></p>
+        </div>
+    </section>
+
+    <section class="partners">
+        <h2 class="section-title" data-i18n="partners_title">Наші партнери</h2>
+        <div class="partners-grid">
+            <img src="img/partner.png" alt="Ваші партнери">
+            <img src="img/agencija.png" alt="Ваші агенції">
+            <img src="img/praca.png" alt="Ваші роботодавці">
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2 data-i18n="contact_title">Зв’язатися з нами</h2>
+            <a href="viber://chat?number=+380661391932" class="viber-button" data-i18n="submit">Написати у Viber</a>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <p data-i18n="footer">© 2025 Робота в Європі. Всі права захищені.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

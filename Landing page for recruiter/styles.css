@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+header.hero {
+    background: linear-gradient(to right, #023669, #0791fa);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 10px;
+}
+
+.btn,
+.viber-button {
+    display: inline-block;
+    background-color: #7e86f8;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover,
+.viber-button:hover {
+    background-color: #d13a68;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.flex-col {
+    flex: 1 1 300px;
+    background: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.vacancies {
+    padding: 60px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #003973;
+}
+
+.vacancy-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.vacancy-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.vacancy-card:hover {
+    transform: translateY(-5px);
+}
+
+.vacancy-card h3 {
+    color: #005599;
+    margin-bottom: 10px;
+}
+
+.vacancy-card p {
+    margin: 6px 0;
+}
+
+.partners {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.partners-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.partners-grid img {
+    max-height: 60px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.partners-grid img:hover {
+    transform: scale(1.1);
+}
+
+.contact {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Language Switcher */
+.lang-switcher {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.lang-switcher button {
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    border: none;
+    margin: 0 5px;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.lang-switcher button:hover {
+    background: rgba(255, 255, 255, 0.6);
+    color: #333;
+}
+
+/* попередні стилі залишаються */
+
+.process ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: auto;
+}
+
+.process li {
+    background: #e0f7fa;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.testimonials blockquote {
+    background: #f9f9f9;
+    border-left: 5px solid #28a745;
+    margin: 20px auto;
+    padding: 15px 20px;
+    max-width: 600px;
+    font-style: italic;
+}
+
+.faq p {
+    background: #fffde7;
+    padding: 10px 15px;
+    border-left: 4px solid #ffc107;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .lang-switcher {
+        position: static;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .btn,
+    .viber-button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn,
+    .viber-button {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+}
